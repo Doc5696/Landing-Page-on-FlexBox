@@ -16,12 +16,12 @@
     </div>
     <nav>
       <div class="topNav" id="headerTopNav">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">services</a>
-        <a href="#">portfolio</a>
-        <a href="#">testimonials</a>
-        <a href="#">contact</a>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#testimonials">testimonials</a>
+        <a href="#contact">contact</a>
         <a href="#" class="icon" id="menu">&#9776;</a>
       </div>
     </nav>
@@ -32,27 +32,25 @@
       <p>We are a digital agency with <span class="os__bold">years of experience and with extraordinary people</span>
       </p>
     </section>
-    <div class="wrapper">
-      <div class="main__about">
-        <div class="about__left">
-          <img src="img/left-side.png" alt="imac_with_mycompany_site" class="mv-100">
-        </div>
-        <div class="about__right">
-          <h2>some words <span class="os__bold">about us</span></h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at
-            asperiores minus ad eaque maxime possimus .</p>
-          <ul>
-            <li><span class="os__semibold">Mission - </span>We deliver uniqueness and quality</li>
-            <li><span class="os__semibold">Skills - </span>Delivering fast and excellent results</li>
-            <li><span class="os__semibold">Clients - </span>Satisfied clients thanks to our experience</li>
-          </ul>
-        </div>
+    <section class="main__about wrapper" id="about">
+      <div class="about__left">
+        <img src="img/left-side.png" alt="imac_with_mycompany_site" class="mv-100">
       </div>
-    </div>
+      <div class="about__right">
+        <h2>some words <span class="os__bold">about us</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at
+          asperiores minus ad eaque maxime possimus .</p>
+        <ul>
+          <li><span class="os__semibold">Mission - </span>We deliver uniqueness and quality</li>
+          <li><span class="os__semibold">Skills - </span>Delivering fast and excellent results</li>
+          <li><span class="os__semibold">Clients - </span>Satisfied clients thanks to our experience</li>
+        </ul>
+      </div>
+    </section>
+
     <section class="main__team">
       <div class="wrapper">
         <h2 class="os__semibold">our team</h2>
-        <div class="underline"></div>
         <div class="team__cards">
           <div class="card">
             <div class="photo">
@@ -89,10 +87,9 @@
         </div>
       </div>
     </section>
-    <section class="main__services">
+    <section class="main__services" id="services">
       <div class="wrapper">
         <h2 class="os__semibold">our services</h2>
-        <div class="underline"></div>
         <p class="services__description os__italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
           ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum ab iusto assumenda velit
           excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem
@@ -125,21 +122,18 @@
     <section class="main__clients">
       <div class="wrapper">
         <h2 class="os__light">some of <span class="os__semibold">our clients</span></h2>
-        <div class="underline"></div>
         <div class="clients__items">
-          <img src="/img/clients/chanel.png" alt="chanel">
-          <img src="/img/clients/zara.png" alt="zara">
-          <img src="/img/clients/guerline.png" alt="guerline">
-          <img src="/img/clients/lancome.png" alt="lancome">
-          <img src="/img/clients/lakoste.png" alt="lakoste">
+          <img src="img/clients/chanel.png" alt="chanel">
+          <img src="img/clients/zara.png" alt="zara">
+          <img src="img/clients/guerline.png" alt="guerline">
+          <img src="img/clients/lancome.png" alt="lancome">
+          <img src="img/clients/lakoste.png" alt="lakoste">
         </div>
       </div>
     </section>
-
-    <section class="main__gallery">
+    <section class="main__gallery" id="portfolio">
       <div class="wrapper">
         <h2 class="os__light">take a look at <span class="os__semibold">our work</span></h2>
-        <div class="underline"></div>
         <p class="os__italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores
           ullam quis, at asperiores minus ad
           eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.Lorem ipsum dolor sit amet,
@@ -169,11 +163,9 @@
         </div>
       </div>
     </section>
-
-    <sectipn class="main__testimonials">
+    <sectipn class="main__testimonials" id="testimonials">
       <div class="wrapper">
         <h2 class="os__semibold">our clients’ <span class="os__light">testimonials</span></h2>
-        <div class="underline"></div>
         <p class="os__semibold">This book is a treatise on the theory of ethics, very popular during the Renaissance.
           The first line of Lorem
           Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
@@ -181,11 +173,9 @@
         </p>
       </div>
     </sectipn>
-
-    <section class="main__contact">
+    <section class="main__contact" id="contact">
       <div class="contact__wrapper">
         <h2 class="os__semibold">contact us</h2>
-        <div class="underline"></div>
         <p class="os__italic contact__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex
           quidem maiores
           ullam quis, at
@@ -212,10 +202,22 @@
         </form>
       </div>
     </section>
-
   </main>
   <footer>
-
+    <div class="wrapper">
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener nofollow"><img src="img/social/facebook.png"
+            alt="facebook"></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener nofollow"><img src="img/social/twitter.png"
+            alt="twitter"></a>
+        <a href="https://www.google.com/" target="_blank" rel="noopener nofollow"><img src="img/social/google.png"
+            alt="google"></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener nofollow"><img src="img/social/linkedin.png"
+            alt="linkedin"></a>
+        <a href="https://dribbble.com/" target="_blank" rel="noopener nofollow"><img src="img/social/dribbble.png"
+            alt="dribbble"></a>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
