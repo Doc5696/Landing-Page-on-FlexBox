@@ -642,4 +642,12 @@ footer{
     grid-template-columns: auto;
   }
 
+  .contact__wrapper input[type=text]{
+    width: calc(100% - 23px);
+  }
+  
+  .contact__wrapper textarea{
+    width: calc(100% - 23px);
+  }
+
 }
