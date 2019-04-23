@@ -38,6 +38,10 @@
   font-style: normal;
 }
 
+:root{
+  --orange: #fcac45;
+}
+
 body{
   font-family: OpenSans-Regular, sans-serif;
 }
@@ -75,7 +79,20 @@ h2{
 }
 
 .os__yellow{
-  color: #fcac45;
+  color: var(--orange);
+}
+
+section {
+  padding: 100px;
+}
+
+h2::after{
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding-top: 30px;
+  border-bottom: 3px solid var(--orange);
 }
 
 header{
@@ -111,7 +128,7 @@ nav{
 }
 
 .topNav a:hover{
-  border-bottom: 3px solid #fcac45;
+  border-bottom: 3px solid var(--orange);
 }
 
 .topNav .icon{
@@ -143,7 +160,7 @@ main .main__welcome h1{
 }
 
 .mycompany{
-  color: #fcac45;
+  color: var(--orange);
 }
 
 .wrapper{
@@ -163,7 +180,7 @@ main .main__about{
 .about__right h2{
   display: inline-block;
   color: #222222;
-  border-bottom: 3px solid #fcac45;
+  border-bottom: 3px solid var(--orange);
   padding-bottom: 20px;
 }
 
@@ -178,7 +195,7 @@ main .main__about{
 }
 
 .about__right li{
-  background: url(img/list_mark.png) 0px no-repeat;
+  background: url('img/list_mark.png') 0px no-repeat;
   font-family: OpenSans-Italic;
   padding-left: 25px;
   margin-top: 10px;
@@ -200,15 +217,6 @@ main .main__about{
 .main__team h2{
   font-size: 44px;
   padding-bottom: 30px;
-}
-
-h2::after{
-  content: "";
-  display: block;
-  margin: 0 auto;
-  width: 100px;
-  padding-top: 30px;
-  border-bottom: 3px solid #fcac45;
 }
 
 .photo{
@@ -244,7 +252,7 @@ h2::after{
 .main__services h2{
   text-align: center;
   font-size: 44px;
-  padding: 100px 0 30px 0;
+  padding: 0 0 30px 0;
   color: #222222
 }
 
@@ -281,7 +289,7 @@ h2::after{
 .main__clients h2{
   text-align: center;
   font-size: 44px;
-  padding: 100px 0 30px 0;
+  padding: 0 0 30px 0;
 }
 
 .clients__items{
@@ -301,7 +309,7 @@ h2::after{
 .main__gallery h2{
   font-size: 44px;
   color: #222222;
-  margin: 100px 0 35px 0;
+  margin: 0 0 35px 0;
 }
 .main__gallery p{
   font-size: 16px;
@@ -362,7 +370,7 @@ h2::after{
   font-size: 44px;
   color: #222222;
   text-align: center;
-  margin: 100px 0 30px 0;
+  margin: 0 0 30px 0;
 }
 
 .contact__wrapper .contact__desc{
@@ -410,7 +418,7 @@ input, textarea{
 input[type=submit]{
   width: 165px;
   height: 40px;
-  background: #fcac45;
+  background: var(--orange);
   color: #fff;
   border: 1px solid transparent;
   cursor: pointer;
@@ -421,8 +429,8 @@ input[type=submit]{
 
 input[type=submit]:hover{
   background: #fff;
-  color: #fcac45;
-  border: 1px solid #fcac45;
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 form p{
@@ -449,12 +457,7 @@ footer{
   opacity: 0.7;
 }
 
-
-
-
-
-
-
+/* ************* */
 
 @media screen and (max-width: 1372px){
   nav{ 
@@ -469,9 +472,11 @@ footer{
 }
 
 @media screen and (max-width: 1100px){
+
   .topNav a{
     display: none;
   }
+
   .topNav a.icon{
     display: block;
     float: right;
@@ -479,22 +484,27 @@ footer{
     color: #fff;
     font-size: 25px;
   }
+
   nav{
     width: 100%;
   }
+
   .topNav.responsive{
     position: relative;
     top: 50px;
     left: -200px;
   }
+
   header .topNav.responsive{
     height: 340px;
   }
+
   .topNav.responsive a.icon{
     position: absolute;
     top: -50px;
     right: -200px;
   }
+
   .topNav.responsive a{
     float: none;
     display: block;
@@ -504,7 +514,7 @@ footer{
 /* main */
 
   main .main__welcome{
-    padding: 50px 0 50px 0;
+    padding: 50px 0 100px 0;
   }
 
   main .main__welcome p{
@@ -517,6 +527,11 @@ footer{
 
   .main__about{
     flex-direction: column;
+  }
+
+  .about__left{
+    margin: 0 auto;
+    max-width: 512px;
   }
 
   .mv-100{
@@ -534,15 +549,97 @@ footer{
     margin-top: 30px;
   }
 
+  .main__team{
+    padding: 100px 0 0 0;
+  }
+
   .team__cards{
-    flex-direction: column;  
+    flex-direction: column;
+    padding: 50px 0 50px 0;  
+  }
+
+  .team__cards .card{
+    margin: 0 0 100px 0;
+  }
+
+  .main__services{
+    padding-bottom: 0;
   }
 
   .services__items{
-    grid-template-columns: auto;  
+    grid-template-columns: auto;
+    margin-bottom: 0;
   }
   
+  .service__item{
+    margin: 0 0 100px 0;
+  }
+
   .clients__items{
     grid-template-columns: auto;
+    margin: 100px 0 0 0;
   }
+
+  .clients__items img{
+    margin-bottom: 100px;
+  }
+
+  .main__gallery p{
+    margin-bottom: 100px;
+  }
+
+  .gallery__line{
+    grid-template-columns: auto auto;
+  }
+
+  .main__gallery-wrapper{
+    margin-bottom: 0;
+  }
+
+  .main__gallery-wrapper img{
+    padding: 5px;
+    width: calc(100% - 5px);
+  }
+
+  .author{
+    margin-bottom: 100px;
+  }
+
+  .contact__wrapper{
+    width: 100%;
+  }
+
+  input[type=submit]{
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and (max-width: 500px){
+
+  section{
+    padding: 100px 15px 100px 15px;
+  }
+
+  h2{
+    font-size: 34px;
+  }
+
+  main .main__welcome{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  main .main__welcome h1{
+    margin-bottom: 20px;
+  }
+
+  .contact__wrapper{
+    width: calc(100% - 30px);
+  }
+
+  .form__inputs{
+    grid-template-columns: auto;
+  }
+
 }
