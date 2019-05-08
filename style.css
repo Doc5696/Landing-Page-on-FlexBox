@@ -33,7 +33,7 @@
 
 @font-face{
   font-family: 'OpenSans-Italic';
-  src: url('/fonts/OpenSans/OpenSans-Italic.ttf');
+  src: url('fonts/OpenSans/OpenSans-Italic.ttf');
   font-weight: normal;
   font-style: normal;
 }
